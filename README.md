@@ -20,3 +20,4 @@ $ make setup
 - `Data/Models`: Contem os modelos treinados serializados utilizando o pacote Pickle
 - `preprocessing.py`: Executa as funções de preprocessamento nos arquivos dentro da pasta Data/Raw, transformando elas em um DataFrame
 - `plpred`: Diretório principal do pacote, com sa funções da aplicação.
+- `plpred/models`: Disponibiliza modelos de treinamento baseados em *Random Forest*, *Gradient Boost*, SVM e Redes Neurais (NN)

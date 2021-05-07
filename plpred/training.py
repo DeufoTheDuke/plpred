@@ -3,9 +3,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 import pickle 
-from model import PlpredModel
+from models import PlpredRF, PlpredGB, PlpredSVM, PlpredNN
 
-def train_model(file_path:str) -> RandomForestClassifier:
+def train_model(file_path:str) -> PlpredGB:
     """
     Train a ML model to classify membrane proteins.
 
@@ -24,7 +24,7 @@ def train_model(file_path:str) -> RandomForestClassifier:
 
     X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-    model = PlpredModel()
+    model = PlpredGB()
     model.fit(X_train, y_train)
 
     y_pred = model.predict(X_test)
