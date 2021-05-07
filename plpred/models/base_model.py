@@ -7,7 +7,7 @@ from sklearn.base import BaseEstimator
 import numpy as np
 
 
-class PlpredModel:
+class BaseModel:
     def __init__(self, estimator:BaseEstimator=RandomForestClassifier()) -> None:
         """
         Initialize the object.
