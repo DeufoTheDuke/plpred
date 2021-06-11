@@ -4,6 +4,8 @@ By Woloski
 
 A protein subcellular location preditction program
 
+Available at [https://rw-plpred.herokuapp.com/] (https://rw-plpred.herokuapp.com/)
+
 ## Setup
 
 ```
