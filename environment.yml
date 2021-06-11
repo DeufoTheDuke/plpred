@@ -9,4 +9,3 @@ dependencies:
   - openblas
   - pip:
     - -r requirements.txt
-    - -e .
