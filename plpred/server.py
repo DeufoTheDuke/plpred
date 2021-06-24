@@ -33,7 +33,7 @@ def main():
 
     arguments = argument_parser.parse_args()
     with open (arguments.model, 'rb') as handle:
-        app.config['model'] = pickle.load(handle)
+        apmp.config['model'] = pickle.load(handle)
 
     app.run(host=arguments.host, port=arguments.port)
 
